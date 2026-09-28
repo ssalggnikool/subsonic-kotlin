@@ -18,7 +18,7 @@ import kotlin.time.Instant
 @Serializable
 public data class Bookmark<T : SubsonicResource> internal constructor(
     val position: Int,
-    val username: String,
+    val username: String? = null,
     val comment: String,
     @SerialName("created")
     val createdAt: Instant,

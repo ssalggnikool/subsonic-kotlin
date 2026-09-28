@@ -42,9 +42,9 @@ import kotlin.time.Instant
 @Serializable
 public data class Album internal constructor(
     override val id: String,
-    override val name: String,
+    override val name: String? = null,
     @SerialName("artist")
-    val artistName: String,
+    val artistName: String? = null,
     val artistId: String? = null,
     val artists: List<Artist> = emptyList(),
     val displayArtist: String? = null,
