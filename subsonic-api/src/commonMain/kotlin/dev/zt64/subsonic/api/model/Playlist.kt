@@ -19,7 +19,7 @@ import kotlin.time.Instant
 @Serializable
 public sealed interface SongCollection {
     public val id: String
-    public val name: String
+    public val name: String?
 
     @SerialName("coverArt")
     public val coverArtId: String?
@@ -52,7 +52,7 @@ public sealed interface SongCollection {
 public data class Playlist internal constructor(
     override val id: String,
     override val name: String,
-    val owner: String,
+    val owner: String? = null,
     val comment: String? = null,
     @SerialName("coverArt")
     override val coverArtId: String? = null,

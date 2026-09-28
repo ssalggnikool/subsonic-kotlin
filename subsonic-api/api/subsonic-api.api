@@ -1086,7 +1086,9 @@ public final class dev/zt64/subsonic/api/model/InternetRadioStation {
 	public final fun component2 ()Ljava/lang/String;
 	public final fun component3 ()Ljava/lang/String;
 	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Ljava/lang/String;
 	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCoverArtId ()Ljava/lang/String;
 	public final fun getHomepageUrl ()Ljava/lang/String;
 	public final fun getId ()Ljava/lang/String;
 	public final fun getName ()Ljava/lang/String;
@@ -1902,16 +1904,17 @@ public final class dev/zt64/subsonic/api/model/Song$ExplicitStatus$Companion {
 
 public final class dev/zt64/subsonic/api/model/Song$Movement {
 	public static final field Companion Ldev/zt64/subsonic/api/model/Song$Movement$Companion;
-	public fun <init> (Ljava/lang/String;II)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 	public final fun component1 ()Ljava/lang/String;
-	public final fun component2 ()I
-	public final fun component3 ()I
-	public final fun copy (Ljava/lang/String;II)Ldev/zt64/subsonic/api/model/Song$Movement;
-	public static synthetic fun copy$default (Ldev/zt64/subsonic/api/model/Song$Movement;Ljava/lang/String;IIILjava/lang/Object;)Ldev/zt64/subsonic/api/model/Song$Movement;
+	public final fun component2 ()Ljava/lang/Integer;
+	public final fun component3 ()Ljava/lang/Integer;
+	public final fun copy (Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;)Ldev/zt64/subsonic/api/model/Song$Movement;
+	public static synthetic fun copy$default (Ldev/zt64/subsonic/api/model/Song$Movement;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;ILjava/lang/Object;)Ldev/zt64/subsonic/api/model/Song$Movement;
 	public fun equals (Ljava/lang/Object;)Z
-	public final fun getCount ()I
+	public final fun getCount ()Ljava/lang/Integer;
 	public final fun getName ()Ljava/lang/String;
-	public final fun getNumber ()I
+	public final fun getNumber ()Ljava/lang/Integer;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 }
@@ -2113,20 +2116,20 @@ public final class dev/zt64/subsonic/api/model/Starred$Companion {
 
 public final class dev/zt64/subsonic/api/model/StreamDetails {
 	public static final field Companion Ldev/zt64/subsonic/api/model/StreamDetails$Companion;
-	public final fun component1 ()I
-	public final fun component2 ()I
-	public final fun component3 ()I
+	public final fun component1 ()Ljava/lang/Integer;
+	public final fun component2 ()Ljava/lang/Integer;
+	public final fun component3 ()Ljava/lang/Integer;
 	public final fun component4 ()Ljava/lang/String;
-	public final fun component5 ()I
+	public final fun component5 ()Ljava/lang/Integer;
 	public final fun component6 ()Ljava/lang/String;
 	public final fun component7 ()Ljava/lang/String;
 	public final fun component8 ()Ljava/lang/String;
 	public fun equals (Ljava/lang/Object;)Z
-	public final fun getAudioBitdepth ()I
-	public final fun getAudioBitrate ()I
-	public final fun getAudioChannels ()I
+	public final fun getAudioBitdepth ()Ljava/lang/Integer;
+	public final fun getAudioBitrate ()Ljava/lang/Integer;
+	public final fun getAudioChannels ()Ljava/lang/Integer;
 	public final fun getAudioProfile ()Ljava/lang/String;
-	public final fun getAudioSamplerate ()I
+	public final fun getAudioSamplerate ()Ljava/lang/Integer;
 	public final fun getCodec ()Ljava/lang/String;
 	public final fun getContainer ()Ljava/lang/String;
 	public final fun getProtocol ()Ljava/lang/String;
