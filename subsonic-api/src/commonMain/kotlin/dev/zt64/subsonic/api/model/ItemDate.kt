@@ -11,7 +11,7 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 public data class ItemDate internal constructor(
-    public val year: Int?,
-    public val month: Int?,
-    public val day: Int?
+    public val year: Int? = null,
+    public val month: Int? = null,
+    public val day: Int? = null
 )
