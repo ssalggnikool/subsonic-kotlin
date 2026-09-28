@@ -78,9 +78,7 @@ public class SubsonicClient(
 
                 HttpResponseValidator {
                     validateResponse { response ->
-                        val contentType = response.headers["content-type"]
-
-                        if (contentType == ContentType.Application.Json.contentType) {
+                        if (response.contentType() == ContentType.Application.Json) {
                             try {
                                 val subsonicResponse =
                                     Json.decodeFromString<SubsonicResponse<Any>>(
