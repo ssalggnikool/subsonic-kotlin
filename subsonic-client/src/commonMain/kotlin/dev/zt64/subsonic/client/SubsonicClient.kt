@@ -58,10 +58,6 @@ public class SubsonicClient(
                 }
             }
 
-            val json = Json {
-                ignoreUnknownKeys = true
-            }
-
             val httpClientConfig: HttpClientConfig<*>.() -> Unit = {
                 install(ContentNegotiation) { json(json) }
                 install(UserAgent) { agent = userAgent }
@@ -81,7 +77,7 @@ public class SubsonicClient(
                         if (response.contentType() == ContentType.Application.Json) {
                             try {
                                 val subsonicResponse =
-                                    Json.decodeFromString<SubsonicResponse<Any>>(
+                                    json.decodeFromString<SubsonicResponse<Any>>(
                                         response.bodyAsText()
                                     )
 
